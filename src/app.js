@@ -17,7 +17,7 @@ export class App {
     this.directionsService = new DirectionsService(this.mapApi, this.bestTimeApi)
     this.directionsController = new DirectionsController(this.router, this.directionsService)
     // 50.262416, 19.03570050.257670, 19.020345
-    await this.directionsService.getDirections({lng: 19.035700, lat: 50.262416}, {lng: 19.020345, lat: 50.257670}, 'driving', 10)
+    // await this.directionsService.getDirections({lng: 19.035700, lat: 50.262416}, {lng: 19.020345, lat: 50.257670}, 'driving', 10)
   }
 
 }
