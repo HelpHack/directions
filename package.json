@@ -1,14 +1,15 @@
 {
-  "name": "search",
+  "name": "directions",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc && vite build",
-    "start": "npm run build && node ./dist/main.js"
+    "dev": "nodemon ./src/main.js",
+    "start": "npm run build && node ./src/main.js"
   },
-  "devDependencies": {
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0"
+  "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.13.5",
+    "axios": "^1.1.2",
+    "helphack-router": "git+https://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:x-oauth-basic@github.com/HelpHack/router-js.git#main"
   }
 }
